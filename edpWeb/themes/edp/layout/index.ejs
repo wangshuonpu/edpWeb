@@ -1,0 +1,77 @@
+layout: false
+---
+<%- partial('_partial/head') %>
+<body>
+<%- partial('_partial/header') %>
+<div id="pageContain">
+    <div class="page page1 current">
+        <div class="contain">
+            <div class="bg-top">
+                <div id="description">
+                    <img src="css/images/title.png" />
+                </div>
+            </div>
+
+            <!--<object data="css/images/bg-logo-color.svg" type="image/svg+xml">-->
+            <!--</object>-->
+        </div>
+    </div>
+
+    <div class="page page2">
+        <div class="contain">
+            <p class="txt">包管理</p>
+        </div>
+    </div>
+
+    <div class="page page3">
+        <div class="contain">
+            <p class="txt">项目管理</p>
+        </div>
+    </div>
+
+    <div class="page page4">
+        <div class="contain">
+            <p class="txt">调试</p>
+        </div>
+    </div>
+
+    <div class="page page5">
+        <div class="contain">
+            <p class="txt">构建</p>
+        </div>
+    </div>
+
+    <div class="page page6">
+        <div class="contain">
+            <a class="start" href="page/demo.html">start</a>
+            <div class="contact-us"></div>
+        </div>
+    </div>
+</div>
+
+<ul id="navBar">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+<script src="js/fullPage.min.js"></script>
+<script>
+    var runPage;
+    runPage = new FullPage({
+        id: 'pageContain',
+        slideTime: 800,
+        effect: {
+            transform: {
+                translate: 'Y'
+            }
+            //opacity: [0, 1]
+        },
+        mode: 'wheel, touch, nav:navBar',
+        easing: 'ease'
+    });
+</script>

@@ -1,0 +1,77 @@
+﻿layout:
+    false
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>演示</title>
+    <%- css('/css/demo.css') %>
+</head>
+
+<body>
+<%- partial('_partial/header') %>
+<div id="pageContain">
+	<div class="page page1 current">
+		<div class="contain">
+			<p class="txt">第一屏</p>
+		</div>
+	</div>
+
+	<div class="page page2">
+		<div class="contain">
+			<p class="txt">第二屏</p>
+		</div>
+	</div>
+
+	<div class="page page3">
+		<div class="contain">
+			<p class="txt">第三屏</p>
+		</div>
+	</div>
+
+	<div class="page page4">
+		<div class="contain">
+			<p class="txt">第四屏</p>
+		</div>
+	</div>
+
+	<div class="page page5">
+		<div class="contain">
+			<p class="txt">第五屏</p>
+		</div>
+	</div>
+</div>
+
+<ul id="navBar">
+    <object data="/css/images/bg-logo-btm-wt.svg" type="image/svg+xml">
+    </object>
+    <div class="bg-btm"></div>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+
+
+
+<script src="/js/fullPage.min.js"></script>
+<script>
+    var runPage;
+    runPage = new FullPage({
+        id: 'pageContain',
+        slideTime: 800,
+        effect: {
+            transform: {
+                translate: 'X'
+            },
+            opacity: [0, 1]
+        },
+        mode: 'wheel, touch, nav:navBar',
+        easing: 'ease'
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import "_variables"
+
+body
+div
+p
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+html
+  overflow: hidden
+
+body 
+  width: 100%
+  *cursor: default
+  overflow: hidden
+  font: 16px/1.5 "Microsoft YaHei"  Helvetica  STHeiti STXihei   Microsoft JhengHei  Arial
+
+#pageContain 
+  overflow: hidden
+
+.page 
+  display: none
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: absolute
+  top: 0
+  left: 0
+
+.contain 
+  width: 100%
+  height: 100%
+  display: none
+  position: relative
+  z-index: 0
+
+.current .contain
+.slide .contain
+  display: block
+
+.current 
+  display: block
+  z-index: 1
+
+.slide 
+  display: block
+  z-index: 2
+
+.swipe 
+  display: block
+  z-index: 3
+  transition-duration: 0ms !important
+  -webkit-transition-duration: 0ms !important
+
+.page1
+  background-color: #FD8549
+  /*background: #393939*/
+  .bg-top
+    background-color: #393939
+    position: absolute
+    top: 0
+    height: 70%
+    width: 100%
+    -moz-box-shadow: 0 2px 4px #666
+    -webkit-box-shadow: 0 5px 6px #352E2E
+
+    #description
+      img
+        display: block
+        margin: 0 auto
+        margin-top: 15%
+   object
+    line-height: 100px
+    height: 30%
+    position: absolute
+    bottom: 0
+    left: 5%
+
+
+.page2 
+  background: #FD8549
+
+.page3 
+  background: #fd8549
+
+.page4 
+  background: #f67a3c
+
+.page5 
+  background: #ee7031
+
+.page6 
+  background: #e66728
+  .start
+    display: block
+    background: #eeeeee
+    height: 300px
+    width: 100%
+
+
+#navBar 
+  z-index: 3
+  position: absolute
+  top: 30%
+  right: 3%
+
+#navBar .active 
+  background-color: #FCDFAA
+
+#navBar
+  li
+    cursor: pointer
+    margin-bottom: 30px
+    transition: all .7s ease
+    border-radius: 50%
+    /*line-height: 40px*/
+    /*text-align: center*/
+    width: 10px
+    height: 10px
+    /*color: #ff5a09*/
+    background-color #6e6e6e
+
+.txt 
+  margin-top: 20%
+  font-size: 50px
+  color: #FCDFAA
+  text-align: center
+
+@import "_partial/header"

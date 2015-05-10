@@ -1,0 +1,125 @@
+@import "_variables"
+@import "reset.css"
+
+body
+div
+p
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+html
+  overflow: hidden
+
+body
+  width: 100%
+  *cursor: default
+  overflow: hidden
+  font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial
+
+#pageContain
+  overflow: hidden
+
+.page
+  display: none
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: absolute
+  top: 0
+  left: 0
+
+.contain
+  width: 100%
+  height: 100%
+  display: none
+  position: relative
+  z-index: 0
+
+.current
+.slide
+  .contain
+    display: block
+
+.current
+  display: block
+  z-index: 1
+
+.slide
+  display: block
+  z-index: 2
+
+.swipe
+  display: block
+  z-index: 3
+  transition-duration: 0ms !important
+  -webkit-transition-duration: 0ms !important
+
+.page1
+  background: #eeeeee
+
+.page2
+  background: #eeeeee
+
+.page3
+  background: #eeeeee
+
+.page4
+  background: #eeeeee
+
+.page5
+  background: #eeeeee
+
+.page6
+  background: #eeeeee
+
+#navBar
+  z-index: 3
+  position: absolute
+  bottom: 0
+  width: 100%
+
+
+  /*background: url("images/dibar.png") no-repeat*/
+  /*background-size: 100% 127px*/
+  /*padding-left: 100px*/
+  /*border-top: 9px solid #FE7C3A*/
+  height: 25%
+  object
+    height:50%
+    position: absolute
+    bottom: 0
+  .bg-btm
+    background-color: #393939
+    position: absolute
+    right: 0
+    height: 50%
+    width: 100%
+
+
+/*#navBar*/
+  /*.active*/
+    /*background: #ccc*/
+    /*border-radius: 0*/
+
+#navBar
+  li
+    float: left
+    cursor: pointer
+    margin-right: 152px
+    transition: all .7s ease
+    border-radius: 70%
+    line-height: 40px
+    text-align: center
+    width: 68px
+    height: 40px
+
+.txt
+  margin-top: 20%
+  font-size: 50px
+  color: #fff
+  text-align: center
+
+@import "_partial/header"

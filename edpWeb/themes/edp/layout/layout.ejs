@@ -1,0 +1,12 @@
+﻿<%- partial('_partial/head_post') %>
+<body>
+<%- partial('_partial/header') %>
+
+<%- partial('_partial/sidebar', {path: url_for('Doc\\')}) %>
+
+<section id="main"><%- partial('_partial/article', {post: page}) %></section>
+
+<%- partial('_partial/footer') %>
+
+</body>
+</html>

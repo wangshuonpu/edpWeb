@@ -1,0 +1,12 @@
+<header>
+    <a class='logo' href="/">
+        <object data="css/images/edp.svg" type="image/svg+xml">
+        </object>
+    </a>
+    <nav class="menu">
+        <% for (var i in theme.menu){ %>
+        <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        <% } %>
+    </nav>
+
+</header>

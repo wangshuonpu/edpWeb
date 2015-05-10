@@ -1,0 +1,38 @@
+header
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1000
+  .logo
+    object
+      height: 40px
+      z-index: 1050
+
+.menu
+  font-weight: bold
+  /*color: color-highlight*/
+  color: #FCDFAA
+  z-index: 1050
+  /*background-color: #393939*/
+  line-height: 3.7em
+  font-family: 'Open Sans', font-yahei
+
+  :first-child
+    margin-left: 67%
+  a
+    display: inline-block
+    text-decoration: none
+    color: #FCDFAA
+    padding:0 1.37em
+    line-height: 2.75em
+
+  .nav-active
+    border-bottom: 2px solid color-highlight
+  a:link
+    color: color-highlight
+  a:hover
+    border-bottom: 2px solid color-highlight
+  a:focus
+
+    border-bottom: 2px solid color-highlight
+@import '_partial/logo.css'
